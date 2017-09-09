@@ -1,0 +1,43 @@
+Caso de Uso: Ingresar al sistema
+Actores: Usuario
+Precondicion: El usuario debe estar registrado en el sistema
+Flujo Basico: El usuario ingresa sus credenciales y da click en Log In.
+              El sistema verifica la existencia del usuario y permite que este ingrese a la plataforma
+Flujo Alternativo: El usuario ingresa credenciales y da click en Log In.
+                   El sistema verifica que no existe un usuario con esas credenciales y da un mensaje de error.
+PostCondicion: El usuario ingresa a la plataforma
+
+
+Caso de Uso: Comprar entrada
+Actores: Cliente
+Precondicion: El cliente debe de haber seleccionado una pelicula, el cine y la funcion a la que asistira
+Flujo Basico: El cliente selecciona la cantidad de entradas a comprar, ingresa su nombre y da click en guardar.
+              El sistema genera la entrada con fecha y hora, el nombre de la persona y la cantidad de entradas.
+Flujo Alternativo: El cliente selecciona la cantidad de entradas a comprar, ingresa su nombre y da click en guardar.
+              El sistema muestra un mensaje de error: "La cantidad de entradas sobrepasa la cantidad de asientos disponibles".
+PostCondicion: El cliente ha comprado la entrada y el sistema la tiene registrada
+
+
+Caso de uso: Registrar informacion de la cadena
+Actores: Encargado
+Precondicion: El encargado debe de estar registrado en el sistema
+Flujo Basico: El encargado ingresa los datos relevantes de la cadena. El sistema verifica que los datos sean validos.
+Flujo Alternativo: El encargado ingresa los datos relevantes de la cadena. El sistema verifica que los datos sean validos.
+                   El sistema muestra el error: "Datos invalidos".
+PostCondicion: La cadena ha sido registrada en el sistema
+
+
+Caso de Uso: Ver listado de peliculas
+Actores: Cliente
+Precondicion: La cartelera de la cadena debe de estar configurada.
+Flujo Basico: El cliente se loguea en el sistema. El sistema verifica las credenciales.
+Flujo Alternativo: El cliente se loguea en el sistema. El sistema verifica las credenciales. El sistema muestra el mensaje: "No hay funciones disponibles"
+PostCondicion: Se muestra el listado de peliculas
+
+
+Caso de Uso: Registrar peliculas
+Actores: Encargado
+Precondicion: La cadena debe de haber sido registrada y el encargado debe de estar logueado
+Flujo Basico: El encargado ingresa la informacion de la pelicula y da click en registrar. El sistema verifica que los datos sean validos
+Flujo Alternativo: El encargado ingresa la informacion de la pelicula y da click en registrar. El sistema muestra el mensaje de error:"Datos insuficientes"
+PostCondicion: La pelicula se encuentra registrada
