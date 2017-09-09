@@ -1,8 +1,8 @@
 # TAREA 1
 
 Integrantes:
-- Juan Francisco Baraybar (20140124)
-- Piero Bardelli (20140127)
+- Juan Francisco Baraybar (20140124) / jfbarayabar
+- Piero Bardelli (20140127) / MrPiero
 
 ---
 
